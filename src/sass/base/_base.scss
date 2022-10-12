@@ -1,0 +1,42 @@
+@use "../utils/colors";
+@use "../utils/fonts";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+body {
+  font-family: fonts.$font-primary;
+  color: colors.getColor("black");
+  letter-spacing: 0.04em;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
+}

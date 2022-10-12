@@ -1,3 +1,16 @@
-body {
-  background-color: blue;
-}
+@use "utils/fonts";
+@use "utils/mixins";
+@use "utils/variables";
+@use "utils/colors";
+
+@use "base/base.scss";
+
+@use "components/about";
+@use "components/advantages";
+@use "components/contacts";
+@use "components/footer";
+@use "components/gallery";
+@use "components/team";
+@use "components/hero";
+@use "components/products";
+@use "components/reviews";
