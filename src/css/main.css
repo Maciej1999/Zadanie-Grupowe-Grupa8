@@ -57,6 +57,7 @@ a {
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  color: #ffa5ba;
 }
 .about__heading {
   font-family: "Titan One";
@@ -93,7 +94,7 @@ a {
   font-size: 16px;
   line-height: 176%;
   letter-spacing: 0.04em;
-  color: #000000;
+  color: #000;
 }
 .about__text--bottom {
   font-family: "DM Sans";
@@ -112,6 +113,7 @@ a {
   line-height: 21px;
   text-align: center;
   color: #d41443;
+  background-color: #fff;
 }
 
 .footer {
