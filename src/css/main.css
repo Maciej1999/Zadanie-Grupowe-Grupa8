@@ -138,6 +138,7 @@ a {
   margin-bottom: 45px;
 }
 .about__button {
+  cursor: pointer;
   width: 175px;
   height: 45px;
   border-radius: 22px;
@@ -148,10 +149,19 @@ a {
   text-align: center;
   color: #d41443;
   background-color: #fff;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.about__button:hover {
+  background-color: #ecebeb;
 }
 .about__icon {
-  width: 5px;
-  height: 10px;
+  width: 20px;
+  height: 15px;
   fill: #d41443;
 }
 
