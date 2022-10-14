@@ -33,5 +33,9 @@
 <symbol id="icon-thin-line" viewBox="0 0 2512 32">
 <path stroke-width="16" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M0 16h2512"></path>
 </symbol>
+<symbol id="icon-Arrow" viewBox="0 0 41 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M24.64 3.2l12.8 12.8-12.8 12.8"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M37.44 16h-34.24"></path>
+</symbol>
 </defs>
 </svg>
