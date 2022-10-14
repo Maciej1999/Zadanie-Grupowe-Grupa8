@@ -40,6 +40,7 @@ a {
 }
 
 .about {
+  background-image: url(../../images/background-aboutx1.png);
   min-width: 320px;
   max-width: 1280px;
   background-color: getColor("pink-light");
@@ -47,7 +48,7 @@ a {
 .about__container {
   width: 100%;
   height: auto;
-  padding: 0, 115px;
+  padding: 0px 115px;
 }
 .about__label {
   font-weight: 400;
