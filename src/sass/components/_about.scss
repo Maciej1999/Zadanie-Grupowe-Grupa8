@@ -1,17 +1,17 @@
 @use '../utils/' as *;
 .about {
   margin: 0 auto;
-  background-image: url('/images/background-aboutx1.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  min-width: 320px;
-  max-width: 1280px;
   background-color: getColor('pink-light');
   display: flex;
   flex-direction: column;
   align-items: center;
   &__container {
+    min-width: 320px;
+    max-width: 1280px;
+    background-image: url('/images/background-aboutx1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     width: 100%;
     height: auto;
     padding: 0px 115px;
