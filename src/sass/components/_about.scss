@@ -1,7 +1,4 @@
-@use '../utils/colors';
-@use '../utils/fonts';
-@use '../utils/mixins';
-@use '../utils/variables';
+@use '../utils/' as *;
 .about {
   background-image: url('/images/background-aboutx1.png');
   min-width: 320px;
