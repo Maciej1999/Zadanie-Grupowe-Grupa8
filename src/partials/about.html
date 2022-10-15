@@ -3,7 +3,25 @@
     <label class="about__label">tradition and love</label>
     <h2 class="about__heading">how it's made?</h2>
     <div class="about__box">
-      <img class="about__image" src="/images/image-aboutx1.png" />
+      <picture>
+        <source
+          srcset="./images/image-about-mobile.png 1x, ./images/image-about-mobile@2x.png 2x"
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="./images/image-about-tablet.png 1x, ./images/image-about-tablet@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/image-about.png 1x, ./images/image-about@2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <img
+          class="about__image"
+          srcset="./images/image-about.png 1x, ./images/image-about@2x.png 2x"
+          alt="cow and milk"
+        />
+      </picture>
       <div class="about__description">
         <p class="about__text about__text--upper">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
