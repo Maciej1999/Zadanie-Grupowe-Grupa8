@@ -1,0 +1,92 @@
+@use '../utils/' as *;
+
+.header {
+  background-color: getColor('pink-medium');
+  width: 100%;
+  padding-top: 6px;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+
+  &__container {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: none;
+  }
+
+  &__link {
+    gap: 35px;
+    font-weight: $font-bold;
+    color: getColor('white');
+    line-height: 1.31;
+  }
+
+  &__button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .header {
+    &__container {
+      padding: 0 20px;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 38px;
+
+    &__container {
+      padding: 0 34px;
+      margin: 0 auto;
+
+      &--left {
+        width: 50%;
+      }
+
+      &--right {
+        display: flex;
+        width: 50%;
+      }
+    }
+
+    &__button {
+      display: block;
+      color: getColor('cherry');
+      font-family: $font-primary;
+      font-weight: 700;
+      width: 159px;
+      height: 44px;
+      border-radius: 50px;
+      background-color: getColor('white');
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    &__container {
+      max-width: 1050px;
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__list {
+      display: flex;
+      gap: 35px;
+      font-weight: $font-bold;
+      font-family: $font-primary;
+    }
+  }
+}

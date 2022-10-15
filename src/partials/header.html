@@ -1,0 +1,48 @@
+<header class="header">
+  <div class="header__container">
+    <div class="header__container--left">
+      <picture>
+        <source
+          srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+
+        <source
+          srcset="./images/logo-tablet.png 1x, ./images/logo-tablet@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/logo-mobile.png 1x, ./images/logo-mobile@2x.png 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
+          alt="Icecream logo"
+          class="header__logo"
+        />
+      </picture>
+    </div>
+    <div class="header__container--right">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#header">Home</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#about">About us</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#how">How it's made?</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#products">Our products</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <button type="button" class="header__button">Buy now &#62;</button>
+  </div>
+</header>
