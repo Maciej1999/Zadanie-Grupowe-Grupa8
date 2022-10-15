@@ -1088,7 +1088,7 @@ a {
   background-color: #c2e297;
 }
 .products__list__item::before {
-  background-image: url(./images/product1.jpg);
+  background-image: url(../images/product1.jpg);
   background-size: cover;
   background-position: center;
   padding-bottom: 30px;
