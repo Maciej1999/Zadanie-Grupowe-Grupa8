@@ -1,33 +1,4 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-body {
-  font-family: 'DM Sans';
-  font-size: 12px;
-}
-
+@use '../utils/' as *;
 .visually-hidden {
   position: absolute;
   // clip: rect(0 0 0 0);
@@ -146,7 +117,7 @@ body {
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0.04em;
-    color: $color-text-primary;
+    color: getColor('black');
     margin-bottom: 10px;
 
     @media screen and (min-width: 768px) {
@@ -160,7 +131,7 @@ body {
   .contacts__secondary-text {
     font-weight: 500;
     line-height: 16px;
-    color: $color-text-secondary;
+    color: getColor('black');
     margin-bottom: 25px;
 
     @media screen and (min-width: 768px) {
@@ -189,7 +160,7 @@ body {
   &__working-time__primary-text {
     font-weight: 500;
     letter-spacing: 0.04em;
-    color: $color-text-primary;
+    color: getColor('black');
   }
   &__working-time__primary-text--before::before {
     content: '';
@@ -197,7 +168,7 @@ body {
     top: 0%;
     width: 100%;
     height: 1px;
-    background-color: $color-text-secondary;
+    background-color: getColor('black');
   }
 
   &__working-time__time--margin {
@@ -214,17 +185,17 @@ body {
     left: 0%;
     width: 100%;
     height: 1px;
-    background-color: $color-text-secondary;
+    background-color: getColor('black');
   }
   &__working-time__time {
     font-weight: 500;
-    color: $color-text-pink;
+    color: getColor('black');
   }
   &__link {
     font-weight: 500;
     font-style: normal;
     line-height: 16px;
-    color: $color-text-secondary;
+    color: getColor('black');
     @media screen and (min-width: 768px) {
       line-height: 24px;
     }
