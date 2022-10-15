@@ -1,11 +1,12 @@
 .footer {
   padding: 0;
   margin: 0;
-  background-color: #fff5f6;
+  background-color: getColor('pink-light');
 
   &__container {
     min-width: 320px;
     width: 100%;
+    max-width: 480px;
     height: auto;
     padding: 0;
     display: flex;
@@ -23,7 +24,7 @@
     font-size: 18px;
     line-height: 21px;
     text-transform: uppercase;
-    color: #ffa5ba;
+    color: getColor('pink-dark');
     padding-left: 22px;
     width: 232px;
   }
@@ -34,7 +35,7 @@
     line-height: 39px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #d41443;
+    color: getColor('cherry');
     padding-left: 20px;
   }
   &__social {
@@ -43,10 +44,22 @@
     justify-content: flex-end;
     gap: 28.24px;
     padding-right: 20.5px;
+    padding-top: 43px;
   }
   &__icon-link {
+    //flex dla svg
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 32px;
     width: 32px;
+    border: 0px;
+    border-radius: 50%;
+    fill: getColor('white');
+    background-color: #FEA5BB;
+    &:hover{
+      background-color:getColor('cherry');
+    }
   }
 
   &__icon-github {
@@ -66,6 +79,7 @@
 
   &__contact {
     text-align: right;
+    padding-top: 43px;
     padding-bottom: 43px;
   }
   &__contact-text {
@@ -74,16 +88,45 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 22px;
-    color: #000000;
+    color: getColor('black');
     padding-right: 20px;
   }
   &__tel {
-    color: #d41443;
+    color: getColor('cherry');
   }
   &__arr {
     text-align: center;
-    border-top: 1px solid #e1e1e1;
+    border-top: 1px solid getColor('gray-light');
     padding-top: 22px;
     padding-bottom: 25px;
+  }
+  &__arr-text{
+    font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 21px;
+      width: 150px;
+      color: getColor('bronze');
+  }
+}
+
+//tabletowo
+
+@media screen and (min-width: 768px){
+  .footer{
+    &__container{
+      max-width: 768px;
+    }
+  }
+}
+
+//desktopowo
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    &__container {
+      max-width: 1280px;
+    }
   }
 }
