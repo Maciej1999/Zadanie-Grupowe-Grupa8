@@ -50,7 +50,7 @@
       margin: 0 auto;
 
       &--left {
-        width: 50%;
+        width: auto;
       }
 
       &--right {
@@ -76,7 +76,7 @@
   .header {
     &__container {
       max-width: 1050px;
-      padding: 0 10px;
+      padding: 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -84,7 +84,7 @@
 
     &__list {
       display: flex;
-      gap: 35px;
+      gap: 30px;
       font-weight: $font-bold;
       font-family: $font-primary;
     }
