@@ -1,9 +1,4 @@
 @use '../utils/' as *;
-$pink-dark: #ffa5ba;
-$pink-medium: #ffb8ca;
-$champagne: #f0d1a5;
-$green: #c2e297;
-$cherry: #d41443;
 
 .products {
   &__container {
@@ -22,7 +17,7 @@ $cherry: #d41443;
     align-items: center;
     flex-wrap: wrap;
     padding-top: 121px;
-    color: #ffa5ba;
+    color: getColor('pink-dark');
     line-height: 1.145;
     font-size: 18px;
     padding-top: 121px;
@@ -37,7 +32,7 @@ $cherry: #d41443;
     align-items: center;
     flex-wrap: wrap;
     padding-bottom: 30px;
-    color: $cherry;
+    color: getColor('cherry');
     line-height: 1.145;
     font-size: 34px;
   }
@@ -73,7 +68,7 @@ $cherry: #d41443;
       justify-content: center;
       align-items: center;
       margin: 0 10px;
-      background-color: $champagne;
+      background-color: getColor('champagne');
       border: white;
       border-radius: 24px;
       background-repeat: no-repeat;
@@ -82,10 +77,10 @@ $cherry: #d41443;
       margin-bottom: 30px;
       z-index: 2;
       &:first-child {
-        background-color: $pink-medium;
+        background-color: getColor('pink-medium');
       }
       &:last-child {
-        background-color: $green;
+        background-color: getColor('green');
       }
       &::before {
         background-image: url(./images/product1.jpg);
