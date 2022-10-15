@@ -1,3 +1,5 @@
+@use '../utils/' as *;
+
 .footer {
   padding: 0;
   margin: 0;
@@ -6,7 +8,7 @@
   &__container {
     min-width: 320px;
     width: 100%;
-    max-width: 480px;
+    max-width: 1280px;
     height: auto;
     padding: 0;
     display: flex;
@@ -31,6 +33,7 @@
   }
 
   &__heading--bigger {
+    width: 200px;
     font-family: 'Titan One';
     font-weight: 400;
     font-size: 34px;
@@ -70,16 +73,19 @@
   &__icon-github {
     height: 19px;
     width: 19px;
+    padding: 0;
   }
 
   &__icon-telegram {
     height: 15px;
     width: 19px;
+    padding: 0;
   }
 
   &__icon-fb {
     height: 19px;
     width: 9px;
+    padding: 0;
   }
 
   &__contact {
@@ -115,27 +121,27 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
-    width: 150px;
+    max-width: 150px;
     color: getColor('bronze');
   }
 }
 
 //tabletowo
 
-@media screen and (min-width: 768px) {
-  .footer {
-    &__container {
-      max-width: 768px;
-    }
-  }
-}
+// @media screen and (min-width: 768px) {
+//   .footer {
+//     &__container {
+//       max-width: 768px;
+//     }
+//   }
+// }
 
 //desktopowo
 
-@media screen and (min-width: 1280px) {
-  .footer {
-    &__container {
-      max-width: 1280px;
-    }
-  }
-}
+// @media screen and (min-width: 1280px) {
+//   .footer {
+//     &__container {
+//       max-width: 1280px;
+//     }
+//   }
+// }
