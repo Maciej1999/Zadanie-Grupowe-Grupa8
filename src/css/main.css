@@ -185,7 +185,7 @@ a {
 }
 @media screen and (min-width: 1280px) {
   .contacts-section {
-    background-image: url(../images/background-contacts.png), linear-gradient(180deg, rgb(255, 255, 255) 80px, rgb(255, 245, 246) 2%);
+    background-image: linear-gradient(180deg, rgb(255, 255, 255) 80px, rgb(255, 245, 246) 2%);
     background-repeat: no-repeat;
     background-position: 50% 25%;
     background-size: 1920px;
@@ -193,7 +193,7 @@ a {
 }
 @media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .contacts-section {
-    background-image: url(../images/background-contacts-2x.png), linear-gradient(180deg, rgb(255, 255, 255) 80px, rgb(255, 245, 246) 2%);
+    background-image: linear-gradient(180deg, rgb(255, 255, 255) 80px, rgb(255, 245, 246) 2%);
   }
 }
 
@@ -859,5 +859,154 @@ a {
     opacity: 1;
     -webkit-transform: translatex(0%);
             transform: translatex(0%);
+  }
+}
+.customer-reviews {
+  padding-bottom: 86px;
+}
+
+.customer-reviews__container {
+  margin: auto;
+  width: 100%;
+}
+
+.review {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+.review__photo {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 29px;
+}
+.review__content {
+  background-color: #fafafa;
+  margin-bottom: 30px;
+}
+.review__text-container {
+  padding: 43px 66px 26px 57px;
+}
+.review__text {
+  text-align: center;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  --lineH: 2.5833333333333335em;
+  line-height: var(--lineH);
+  padding: var(--lineH);
+  padding-block: 0; /*reset to set first line right at top */
+  background: repeating-linear-gradient(to bottom, transparent 0 2.4em, #e1e1e1 2.4em calc(2.4em + 1px), transparent calc(2.4em + 1px) var(--lineH)) 50% 0/calc(100% - var(--lineH) * 2 + 50px) 100% no-repeat;
+}
+.review__content {
+  margin-bottom: 30px;
+}
+.review__separation {
+  color: #d41443;
+  margin-bottom: 18px;
+}
+.review__name {
+  margin-bottom: 30px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.857em;
+  text-align: center;
+}
+.review__dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.review__menu {
+  width: 72px;
+  height: 12px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (min-width: 481px) {
+  .customer-reviews {
+    padding-bottom: 119px;
+  }
+  .review {
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+  .review__text-container {
+    padding: 30px 36px 28px 40px;
+  }
+  .review__text {
+    font-size: 14px;
+    --lineH: 2.142857142857143em;
+    line-height: var(--lineH);
+    padding-block: 0;
+    background: repeating-linear-gradient(to bottom, transparent 0 2em, #e1e1e1 2em calc(2em + 1px), transparent calc(2em + 1px) var(--lineH)) 50% 0/calc(100% - var(--lineH) * 2 + 50px) 100% no-repeat;
+  }
+  .review__content {
+    margin-bottom: 24px;
+  }
+  .review__separation {
+    margin-bottom: 14px;
+  }
+  .review__name {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 1.875em;
+  }
+}
+@media (min-width: 769px) {
+  .customer-reviews {
+    padding-bottom: 132px;
+  }
+  .review {
+    padding-left: 178px;
+    padding-right: 176px;
+  }
+  .review__text-container {
+    padding: 32px 54px 32px 50px;
+  }
+  .review__text {
+    font-size: 16px;
+    --lineH: 1.875em;
+    line-height: var(--lineH);
+    padding-top: 0px;
+    background: repeating-linear-gradient(to bottom, transparent 0 1.7em, #e1e1e1 1.7em calc(1.7em + 1px), transparent calc(1.7em + 1px) var(--lineH)) 50% 0/calc(100% - var(--lineH) * 2 + 5px) 100% no-repeat;
+  }
+  .review__content {
+    margin-bottom: 15px;
+  }
+  .review__separation {
+    margin-bottom: 15px;
+  }
+  .review__name {
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 1.85em;
+  }
+}
+@media (min-width: 1281px) {
+  .customer-reviews__container {
+    width: 1280px;
   }
 }/*# sourceMappingURL=main.css.map */

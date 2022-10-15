@@ -19,116 +19,15 @@
     <title>IceCream</title>
   </head>
   <body>
-    <header class="header">
-      <p class="header__logo"></p>
-      <nav class="header__nav">
-        <ul class="header__nav__list">
-          <li class="header__nav__item">
-            <a class="header__nav__link" href=""></a>
-          </li>
-          <li class="header__nav__item">
-            <a class="header__nav__link" href=""></a>
-          </li>
-          <li class="header__nav__item">
-            <a class="header__nav__link" href=""></a>
-          </li>
-          <li class="header__nav__item">
-            <a class="header__nav__link" href=""></a>
-          </li>
-          <li class="header__nav__item">
-            <a class="header__nav__link" href=""></a>
-          </li>
-        </ul>
-      </nav>
-      <button type="button" class="header__button"></button>
-    </header>
+    <include src="../src/partials/header.html"></include>
     <main>
-      <section class="hero">
-        <h1 class="hero__header"></h1>
-        <button type="button" class="hero__button hero__button--products"></button>
-        <button type="button" class="hero__button hero__button--how"></button>
-        <p class="hero__paragraph"></p>
-        <a class="hero__link" href=""></a>
-        <svg class="hero__image"><use></use></svg>
-      </section>
-      <section class="products">
-        <label class="products__label"></label>
-        <h2 class="products__header"></h2>
-        <ul class="products__grid">
-          <li class="products__grid__item">
-            <h3 class="products__grid__header"></h3>
-            <p class="products__grid__text"></p>
-            <button type="button" class="products__grid__button"></button>
-          </li>
-          <li class="products__grid__item">
-            <h3 class="products__grid__header"></h3>
-            <p class="products__grid__text"></p>
-            <button type="button" class="products__grid__button"></button>
-          </li>
-          <li class="products__grid__item">
-            <h3 class="products__grid__header"></h3>
-            <p class="products__grid__text"></p>
-            <button type="button" class="products__grid__button"></button>
-          </li>
-        </ul>
-      </section>
+      <include src="../src/partials/hero.html"></include>
+      <include src="../src/partials/products.html"></include>
       <include src="../src/partials/about.html"></include>
-      <section class="advantages">
-        <h2 class="advantafes__header"></h2>
-        <ul class="advantages__grid">
-          <li class="advantages__grid__item">
-            <img class="advantages__grid__image" src="" />
-            <p class="advantages__grid__text"></p>
-          </li>
-        </ul>
-      </section>
-      <section class="gallery">
-        <img class="gallery__image" src="" />
-      </section>
+      <include src="../src/partials/advantages.html"></include>
+      <include src="../src/partials/gallery.html"></include>
       <include src="../src/partials/customer-reviews.html"></include>
-      <section class="contacts">
-        <h2 class="contacts__header"></h2>
-        <ul class="contacts__grid">
-          <li class="contacts__grid__item">
-            <p class="contacts__grid__category"></p>
-            <p class="contacts__grid__headline"></p>
-            <p class="contacts__grid__text"></p>
-            <p class="contacts__grid__headline"></p>
-            <p class="contacts__grid__clock"></p>
-            <p class="contacts__grid__headline"></p>
-            <p class="contacts__grid__clock"></p>
-            <!-- <p class="contacts__grid__link"></p>
-          <p class="contacts__grid__tel"></p>
-          <p class="contacts__grid__mail"></p> -->
-          </li>
-          <li class="contacts__grid__item">
-            <p class="contacts__grid__category"></p>
-            <p class="contacts__grid__headline"></p>
-            <p class="contacts__grid__text"></p>
-            <p class="contacts__grid__headline"></p>
-            <p class="contacts__grid__clock"></p>
-            <p class="contacts__grid__headline"></p>
-            <p class="contacts__grid__clock"></p>
-            <!-- <p class="contacts__grid__link"></p>
-          <p class="contacts__grid__tel"></p>
-          <p class="contacts__grid__mail"></p> -->
-          </li>
-          <li class="contacts__grid__item">
-            <p class="contacts__grid__category"></p>
-            <p class="contacts__grid__headline"></p>
-            <p class="contacts__grid__text"></p>
-            <p class="contacts__grid__headline"></p>
-            <p class="contacts__grid__clock"></p>
-            <p class="contacts__grid__headline"></p>
-            <p class="contacts__grid__clock"></p>
-            <!-- <p class="contacts__grid__link"></p>
-          <p class="contacts__grid__tel"></p>
-          <p class="contacts__grid__mail"></p> -->
-          </li>
-        </ul>
-        <button type="button" class="contacts__button contacts__button--location"></button>
-        <button type="button" class="contacts__button contacts__button--franchise"></button>
-      </section>
+      <include src="../src/partials/contacts.html"></include>
       <include src="../src/partials/footer.html"></include>
     </main>
   </body>
