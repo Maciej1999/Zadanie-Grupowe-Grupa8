@@ -268,9 +268,11 @@ a {
   background-color: #ecebeb;
 }
 .about__icon {
-  width: 20px;
-  height: 15px;
-  fill: #d41443;
+  width: 10px;
+  height: 10px;
+  stroke: #d41443;
+  fill: none;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 480px) {
@@ -367,6 +369,9 @@ a {
     line-height: 1.13;
     margin-bottom: 55px;
     letter-spacing: 0.06em;
+  }
+  .about__description {
+    padding-left: 75px;
   }
   .about__text--upper {
     margin-bottom: 35px;

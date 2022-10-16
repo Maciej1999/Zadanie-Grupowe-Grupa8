@@ -102,9 +102,11 @@
     }
   }
   &__icon {
-    width: 20px;
-    height: 15px;
-    fill: getColor('cherry');
+    width: 10px;
+    height: 10px;
+    stroke: getColor('cherry');
+    fill: none;
+    margin-left: 10px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -205,6 +207,9 @@
       line-height: 1.13;
       margin-bottom: 55px;
       letter-spacing: 0.06em;
+    }
+    &__description {
+      padding-left: 75px;
     }
     &__text {
       &--upper {
