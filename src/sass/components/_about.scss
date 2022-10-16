@@ -183,6 +183,7 @@
     }
     &__picture {
       width: 50%;
+      max-width: 516px;
     }
   }
 }
@@ -207,6 +208,9 @@
       line-height: 1.13;
       margin-bottom: 55px;
       letter-spacing: 0.06em;
+    }
+    &__picture {
+      max-width: 516px;
     }
     &__description {
       padding-left: 75px;
