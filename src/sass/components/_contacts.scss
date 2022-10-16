@@ -161,6 +161,7 @@
   }
   &__working-time__primary-text {
     font-weight: 500;
+    line-height: 16px;
     letter-spacing: 0.04em;
     color: getColor('black');
   }
@@ -205,4 +206,48 @@
       line-height: 28px;
     }
   }
+  &__button--locations {
+    width: 194px;
+    height: 45px;
+    border-radius: 22px;
+    font-family: $font-primary;
+    font-weight: $font-bold;
+    font-size: $font-small;
+    line-height: 1.31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: getColor('white');
+    background-color: getColor('cherry');
+    transition-property: background-color;
+    transition-duration: $duration;
+    transition-timing-function: $timingfunction;
+  }
+}
+&__icon {
+  width: 20px;
+  height: 15px;
+  fill: getColor('white');
+}
+&__button--franchise {
+  width: 180px;
+  height: 45px;
+  border-radius: 22px;
+  font-family: $font-primary;
+  font-weight: $font-bold;
+  font-size: $font-small;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: getColor('white');
+  background-color: getColor('cherry');
+  transition-property: background-color;
+  transition-duration: $duration;
+  transition-timing-function: $timingfunction;
+}
+&__icon {
+  width: 20px;
+  height: 15px;
+  fill: getColor('cherry');
 }
