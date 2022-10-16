@@ -8,7 +8,7 @@
     display: flex;
     position: relative;
     width: 100%;
-    padding: 137px 20px 160px 20px;
+    padding: 193px 20px 160px 20px;
 
     &--left {
       width: 100%;
@@ -133,7 +133,7 @@
   .hero {
     overflow: visible;
     &__container {
-      padding: 14px 34px 173px 34px;
+      padding: 110px 34px 173px 34px;
       margin: 0 auto;
 
       &--left {
@@ -201,6 +201,8 @@
       width: 114px;
       margin-bottom: 20px;
       line-height: 1.4;
+      position: relative;
+      z-index: 10;
     }
 
     &__link {
@@ -225,6 +227,7 @@
 
     &__stats {
       text-align: right;
+      margin-right: 10px;
     }
 
     &__number {
@@ -270,7 +273,7 @@
   .hero {
     &__container {
       max-width: 1050px;
-      padding: 84px 0 292px 0;
+      padding: 171px 0 308px 0;
     }
 
     &__header {
@@ -304,7 +307,7 @@
 
     &__image {
       &--1 {
-        left: 36%;
+        left: 479px;
         z-index: 10;
       }
       &--2 {
@@ -345,7 +348,7 @@
     }
 
     &__circle {
-      left: 307px;
+      left: 360px;
       bottom: 78px;
       width: 538px;
       height: 538px;
