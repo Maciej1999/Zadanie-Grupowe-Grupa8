@@ -12,10 +12,16 @@
   padding-left: 20px;
   padding-right: 20px;
 
+  z-index: 1;
+
   display: none;
   flex-direction: column;
   align-items: center;
   justify-items: center;
+
+  &--active {
+    display: flex;
+  }
 
   &__photo {
     width: 85px;
@@ -33,8 +39,9 @@
   }
 
   &__text {
+    position: relative;
+    z-index: 2;
     text-align: center;
-
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: $font-medium-bold;
@@ -51,6 +58,18 @@
         transparent calc(2.4em + 1px) var(--lineH)
       )
       50% 0 / calc(100% - var(--lineH) * 2 + 50px) 100% no-repeat;
+
+    &::before {
+      content: '';
+      width: 54px;
+      height: 40px;
+      position: absolute;
+      top: -15px;
+      left: 3%;
+      z-index: -1;
+      background-image: url(../images/quotemark.png);
+      background-repeat: no-repeat;
+    }
   }
 
   &__content {
@@ -80,7 +99,24 @@
     background-color: getColor('gray');
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition-property: background-color scale;
+    transition: 0.6s ease;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+
+    &--active {
+      background-color: getColor('white');
+      background-image: url(../images/home.png);
+      background-repeat: no-repeat;
+      height: 13px;
+      width: 13px;
+      border-radius: 0;
+      &:hover {
+        transform: scale(1);
+      }
+    }
   }
 }
 
@@ -111,6 +147,8 @@
       --lineH: 2.142857142857143em;
       line-height: var(--lineH);
       padding-block: 0;
+      padding-right: 50px;
+      padding-left: 50px;
       background: repeating-linear-gradient(
           to bottom,
           transparent 0 2em,

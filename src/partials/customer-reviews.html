@@ -1,6 +1,6 @@
-<section class="customer-reviews">
+<section class="customer-reviews" id="customer-reviews">
   <div class="customer-reviews__container">
-    <div class="review">
+    <div class="review" id="review-1">
       <img
         class="review__photo"
         src="./images/testimonials1.png"
@@ -19,10 +19,10 @@
       <h3 class="review__name">Emily, Los Angeles</h3>
     </div>
 
-    <div class="review">
+    <div class="review" id="review-2">
       <img
         class="review__photo"
-        src="./images/testimonials1.png"
+        src="./images/testimonials2.png"
         srcset="./images/testimonials2.png 1x, ./images/testimonials2@2x.png 2x"
         alt="second reviewer"
       />
@@ -38,10 +38,10 @@
       <h3 class="review__name">Grażyna, Świebodzin</h3>
     </div>
 
-    <div class="review">
+    <div class="review" id="review-3">
       <img
         class="review__photo"
-        src="./images/testimonials1.png"
+        src="./images/testimonials3.png"
         srcset="./images/testimonials3.png 1x, ./images/testimonials3@2x.png 2x"
         alt="third reviewer"
       />
@@ -56,11 +56,10 @@
       <div class="review__separation">. . .</div>
       <h3 class="review__name">Gocha, Honolulu</h3>
     </div>
-
     <div class="review__menu">
-      <span class="review__dot" onclick="currentReview(1)"></span>
-      <span class="review__dot" onclick="currentReview(2)"></span>
-      <span class="review__dot" onclick="currentReview(3)"></span>
+      <button class="review__dot" id="dot-1" type="button"></button>
+      <button class="review__dot" id="dot-2" type="button" onclick=""></button>
+      <button class="review__dot" id="dot-3" type="button" onclick=""></button>
     </div>
   </div>
   <script src="./scripts/review-slider.js"></script>
