@@ -12,6 +12,10 @@ figure {
   line-height: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "DM Sans", sans-serif;
   color: #000;
@@ -37,12 +41,12 @@ a {
 }
 
 .header {
-  background-color: #ffb8ca;
   width: 100%;
   padding-top: 6px;
-  position: relative;
+  position: absolute;
   overflow: hidden;
-  z-index: -1;
+  z-index: 100;
+  top: 0;
 }
 .header__container {
   width: 100%;
@@ -61,7 +65,6 @@ a {
   display: none;
 }
 .header__link {
-  gap: 35px;
   font-weight: 700;
   color: #fff;
   line-height: 1.31;
@@ -77,11 +80,8 @@ a {
   }
 }
 @media screen and (min-width: 768px) {
-  .header {
-    padding-top: 38px;
-  }
   .header__container {
-    padding: 0 34px;
+    padding: 38px 34px 0 34px;
     margin: 0 auto;
   }
   .header__container--left {
@@ -106,8 +106,9 @@ a {
 }
 @media screen and (min-width: 1280px) {
   .header__container {
-    max-width: 1050px;
-    padding: 0;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 38px 115px 0 46px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -118,11 +119,16 @@ a {
         -ms-flex-align: center;
             align-items: center;
   }
+  .header__container--right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .header__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 30px;
+    gap: 35px;
     font-weight: 700;
     font-family: "DM Sans", sans-serif;
   }
@@ -883,7 +889,7 @@ a {
   display: flex;
   position: relative;
   width: 100%;
-  padding: 137px 20px 160px 20px;
+  padding: 193px 20px 160px 20px;
 }
 .hero__container--left {
   width: 100%;
@@ -989,7 +995,7 @@ a {
     overflow: visible;
   }
   .hero__container {
-    padding: 14px 34px 173px 34px;
+    padding: 110px 34px 173px 34px;
     margin: 0 auto;
   }
   .hero__container--left {
@@ -1058,6 +1064,8 @@ a {
     width: 114px;
     margin-bottom: 20px;
     line-height: 1.4;
+    position: relative;
+    z-index: 10;
   }
   .hero__link {
     position: relative;
@@ -1079,6 +1087,7 @@ a {
   }
   .hero__stats {
     text-align: right;
+    margin-right: 10px;
   }
   .hero__number {
     font-family: "Titan One", sans-serif;
@@ -1117,7 +1126,7 @@ a {
 @media screen and (min-width: 1280px) {
   .hero__container {
     max-width: 1050px;
-    padding: 84px 0 292px 0;
+    padding: 171px 0 308px 0;
   }
   .hero__header {
     font-size: 38px;
@@ -1143,7 +1152,7 @@ a {
     width: 200px;
   }
   .hero__image--1 {
-    left: 36%;
+    left: 479px;
     z-index: 10;
   }
   .hero__image--2 {
@@ -1179,7 +1188,7 @@ a {
     margin-bottom: 14px;
   }
   .hero__circle {
-    left: 307px;
+    left: 360px;
     bottom: 78px;
     width: 538px;
     height: 538px;
