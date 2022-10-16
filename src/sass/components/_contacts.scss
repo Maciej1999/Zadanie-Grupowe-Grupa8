@@ -37,14 +37,16 @@
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
-    margin: 0px -10px;
+    // margin: 0px -10px;
     display: flex;
     // flex-wrap: wrap;
     margin-bottom: 80px;
+    gap: 30px;
+    justify-content: center;
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
-    margin: 0px -15px;
+    // margin: 0px -15px;
     margin-bottom: 85px;
     position: relative;
   }
@@ -70,7 +72,6 @@
     background-color: #ffffff;
     @media screen and (min-width: 768px) {
       padding: 50px 31px;
-      margin: 0px 10px;
       flex-basis: calc((100% - (6 * 10px)) / 3);
       transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
       transition-duration: 500ms;
@@ -83,9 +84,8 @@
     }
     @media screen and (min-width: 1280px) {
       padding: 55px 43px;
-      margin: 0px 15px;
-      width: 330px;
-      flex-basis: calc((100% - (6 * 15px)) / 3);
+      max-width: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
     }
   }
   &__title {
@@ -223,31 +223,49 @@
     transition-duration: $duration;
     transition-timing-function: $timingfunction;
   }
-}
-&__icon {
-  width: 20px;
-  height: 15px;
-  fill: getColor('white');
-}
-&__button--franchise {
-  width: 180px;
-  height: 45px;
-  border-radius: 22px;
-  font-family: $font-primary;
-  font-weight: $font-bold;
-  font-size: $font-small;
-  line-height: 1.31;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: getColor('white');
-  background-color: getColor('cherry');
-  transition-property: background-color;
-  transition-duration: $duration;
-  transition-timing-function: $timingfunction;
-}
-&__icon {
-  width: 20px;
-  height: 15px;
-  fill: getColor('cherry');
+
+  &__svg--color--white {
+    width: 10px;
+    height: 10px;
+    stroke: getColor('white');
+    fill: none;
+    margin-left: 10px;
+  }
+  &__button--franchise {
+    width: 180px;
+    height: 45px;
+    border-radius: 22px;
+    font-family: $font-primary;
+    font-weight: $font-bold;
+    font-size: $font-small;
+    line-height: 1.31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: getColor('cherry');
+    background-color: getColor('white');
+    transition-property: background-color;
+    transition-duration: $duration;
+    transition-timing-function: $timingfunction;
+  }
+  &__svg--color--red {
+    width: 10px;
+    height: 10px;
+    stroke: getColor('cherry');
+    fill: none;
+    margin-left: 10px;
+  }
+  &__buttons {
+    display: flex;
+    gap: 15px;
+  }
+  &__container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+  }
+  &__address {
+    display: flex;
+    flex-direction: column;
+  }
 }
