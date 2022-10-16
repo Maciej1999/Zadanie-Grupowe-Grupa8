@@ -15,6 +15,10 @@ figure {
   line-height: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: fonts.$font-primary;
   color: colors.getColor('black');
