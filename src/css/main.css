@@ -205,6 +205,9 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.about__picture {
+  width: 100%;
+}
 .about__image {
   width: 100%;
   height: auto;
@@ -328,6 +331,7 @@ a {
             justify-content: flex-start;
   }
   .about__description {
+    width: 50%;
     padding: 0;
     padding-left: 17px;
     padding-top: 50px;
@@ -338,6 +342,9 @@ a {
   }
   .about__button {
     font-size: 16px;
+  }
+  .about__picture {
+    width: 50%;
   }
 }
 @media screen and (min-width: 1280px) {
