@@ -605,8 +605,14 @@ a {
 
 .footer {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   background-color: #fff5f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .footer__container {
   min-width: 320px;
@@ -621,6 +627,13 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.footer__item--row {
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
 }
 .footer__heading {
   padding: 0;
@@ -692,6 +705,7 @@ a {
   height: 15px;
   width: 19px;
   padding: 0;
+  padding-right: 3px;
 }
 .footer__icon-fb {
   height: 19px;
@@ -716,10 +730,17 @@ a {
   color: #d41443;
 }
 .footer__arr {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-top: 1px solid #e1e1e1;
   padding-top: 22px;
   padding-bottom: 25px;
+  margin: 0 auto;
+  width: 100%;
 }
 .footer__arr-text {
   font-family: "DM Sans";
@@ -727,10 +748,115 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  max-width: 150px;
+  width: 135px;
   color: #907e82;
+  margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+  .footer__item--row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 91px;
+  }
+  .footer__item--column {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0;
+  }
+  .footer__heading {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    width: 340px;
+  }
+  .footer__heading--bigger {
+    width: 340px;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.06em;
+  }
+  .footer__contact {
+    padding-top: 46px;
+  }
+  .footer__contact-text {
+    font-size: 14px;
+  }
+  .footer__social {
+    gap: 30px;
+    padding-top: 0;
+  }
+  .footer__icon-link {
+    height: 34px;
+    width: 34px;
+  }
+  .footer__icon-github {
+    height: 20px;
+    width: 20px;
+    padding: 0;
+  }
+  .footer__icon-telegram {
+    height: 16px;
+    width: 20.4px;
+    padding: 0;
+    padding-right: 3.4px;
+  }
+  .footer__icon-fb {
+    height: 20.4px;
+    width: 9.35px;
+    padding: 0;
+  }
+  .footer__arr {
+    padding-top: 29px;
+    padding-bottom: 18px;
+  }
+  .footer__arr-text {
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    width: 276px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__item--row {
+    padding-bottom: 97px;
+  }
+  .footer__heading {
+    font-size: 30px;
+    line-height: 34px;
+    width: 472px;
+  }
+  .footer__heading--bigger {
+    width: 474px;
+    font-size: 58px;
+    line-height: 66px;
+  }
+  .footer__contact {
+    padding-top: 50px;
+  }
+  .footer__contact-text {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+  }
+  .footer__social {
+    gap: 24px;
+    padding-top: 0;
+  }
+  .footer__arr {
+    padding-top: 9px;
+    padding-bottom: 10px;
+  }
+  .footer__arr-text {
+    font-size: 14px;
+    line-height: 26px;
+    width: 276px;
+  }
+}
 .hero {
   background-color: #ffb8ca;
   overflow: hidden;
