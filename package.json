@@ -1,7 +1,7 @@
 {
   "name": "parcel-project-template",
   "version": "1.1.0",
-  "description": "",
+  "description": "Na komputerze musi być zainstalowana LTS-wersja [Node.js](https://nodejs.org/en/).",
   "main": "index.js",
   "homepage": "https://Maciej1999.github.io/Zadanie-Grupowe-Grupa8",
   "scripts": {
