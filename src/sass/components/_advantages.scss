@@ -25,34 +25,35 @@
             letter-spacing: 0.04rem; 
             color: getColor('cherry');
             padding-bottom: 15px;
-            &--1 ::before {
+            &--1::before {
+                
                 background-image:
-                url("./images/adv-icon1x1.png");
+                url("../images/adv-icon1x1.png");
                 @media (min-device-pixel-ratio: 2),
                 (-webkit-min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
-                    background-image: url("./images/adv-icon1x2.png");
+                    background-image: url("../images/adv-icon1x2.png");
                 }
             }
-            &--2 ::before {
+            &--2::before {
                 background-image:
-                url("./images/adv-icon2x1.png");
+                url("../images/adv-icon2x1.png");
                 @media (min-device-pixel-ratio: 2),
                 (-webkit-min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
-                    background-image: url("./images/adv-icon2x2.png");
+                    background-image: url("../images/adv-icon2x2.png");
                 }
             }
-            &--3 ::before {
+            &--3::before {
                 background-image:
-                url("./images/adv-icon3x1.png");
+                url("../images/adv-icon3x1.png");
                 @media (min-device-pixel-ratio: 2),
                 (-webkit-min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
-                    background-image: url("./images/adv-icon3x2.png");
+                    background-image: url("../images/adv-icon3x2.png");
                 }
             }
         }
@@ -70,7 +71,9 @@
             content: "";
             display: block;
             width: 65px;
-            height: 66px;
+            height: 55px;
+            margin-bottom: 16px;
+            background-repeat: no-repeat;
             // border: 1px solid black;
         }
     }
