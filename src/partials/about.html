@@ -1,0 +1,50 @@
+<section class="about" id="about">
+  <div class="about__container">
+    <label class="about__label">tradition and love</label>
+    <h2 class="about__heading">how it's made?</h2>
+    <div class="about__box">
+      <picture class="about__picture">
+        <source
+          srcset="./images/image-about-mobile.png 1x, ./images/image-about-mobile@2x.png 2x"
+          media="(max-width: 767px)"
+          sizes="(min-width:480px) 480px, 100vw"
+        />
+        <source
+          srcset="./images/image-about-tablet.png 1x, ./images/image-about-tablet@2x.png 2x"
+          media="(min-width: 768px)"
+          sizes="(min-width:800px) 800px, 100vw"
+        />
+        <source
+          srcset="./images/image-about.png 1x, ./images/image-about@2x.png 2x"
+          media="(min-width: 1280px)"
+          sizes="(min-width:1280px) 1280px, 100vw"
+        />
+        <img
+          class="about__image"
+          srcset="./images/image-about.png 1x, ./images/image-about@2x.png 2x"
+          alt="cow and milk"
+        />
+      </picture>
+      <div class="about__description">
+        <p class="about__text about__text--upper">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="about__text about__text--bottom">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt.
+          <br /><br />
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <button type="button" class="about__button">
+          Read more
+          <!-- &#62; -->
+          <svg class="about__icon">
+            <use href="./images/icons.svg#icon-btn-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
