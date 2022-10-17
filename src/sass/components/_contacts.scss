@@ -124,6 +124,9 @@
     &--franchise {
       color: getColor('cherry');
       background-color: getColor('white');
+      &:hover {
+        background-color: getColor('grat-hover');
+      }
     }
   }
   &__svg {
