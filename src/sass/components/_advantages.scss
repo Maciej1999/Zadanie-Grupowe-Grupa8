@@ -25,8 +25,10 @@
       letter-spacing: 0.04rem;
       color: getColor('cherry');
       padding-bottom: 15px;
-      &--1 ::before {
+      &--1::before {
         background-image: url('../images/adv-icon1x1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
         @media (min-device-pixel-ratio: 2),
           (-webkit-min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
@@ -34,8 +36,10 @@
           background-image: url('../images/adv-icon1x2.png');
         }
       }
-      &--2 ::before {
+      &--2::before {
         background-image: url('../images/adv-icon2x1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
         @media (min-device-pixel-ratio: 2),
           (-webkit-min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
@@ -43,8 +47,10 @@
           background-image: url('../images/adv-icon2x2.png');
         }
       }
-      &--3 ::before {
+      &--3::before {
         background-image: url('../images/adv-icon3x1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
         @media (min-device-pixel-ratio: 2),
           (-webkit-min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
