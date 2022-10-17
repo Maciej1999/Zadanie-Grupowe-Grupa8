@@ -466,6 +466,9 @@ a {
   display: block;
   width: 65px;
   height: 66px;
+  height: 55px;
+  margin-bottom: 16px;
+  background-repeat: no-repeat;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .advantages__list {
