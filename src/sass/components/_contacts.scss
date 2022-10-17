@@ -1,7 +1,7 @@
 @use '../utils/' as *;
 .contacts {
   width: 100%;
-  background-color: getColor('pink-light');
+  background-image: linear-gradient(getColor('white') 0 5%, getColor('pink-light') 5% 100%);
   &__container {
     margin: 0 auto;
     padding: 0 50px;
@@ -9,9 +9,6 @@
     min-width: 320px;
     max-width: 1280px;
     padding-bottom: 113px;
-    background-image: url(../images/contacts-backgroundx1.png);
-    background-repeat: no-repeat;
-    background-position: center;
   }
   &__heading {
     display: none;
@@ -32,14 +29,13 @@
     background-color: getColor('white');
   }
   &__title {
-    padding: 0;
-    border-radius: 6px;
+    border-radius: 4px;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 30px;
-    margin-bottom: 32px;
+    margin-bottom: 25px;
     background-color: getColor('champagne');
     text-transform: uppercase;
     display: block;
@@ -67,6 +63,9 @@
     font-size: 12px;
     line-height: 22px;
     color: getColor('pink-dark');
+    &--space {
+      margin-bottom: 10px;
+    }
   }
   &__text {
     font-family: 'DM Sans';
@@ -143,101 +142,104 @@
 
 @media screen and(min-width:768px) {
   .contacts {
+    background-image: linear-gradient(getColor('white') 0 12%, getColor('pink-light') 12% 100%);
     &__container {
-      margin: 0 auto;
       padding: 0 36px;
-      padding-top: 85px;
       padding-bottom: 158px;
-      background-image: url(../images/contacts-backgroundx1.png);
     }
     &__grid {
       display: flex;
       flex-direction: row;
+      margin-bottom: 81px;
     }
     &__item {
       flex-basis: calc((100% - 40px) / 3);
+      padding: 50px 31px;
     }
-    // &__title {
-    // }
-    // &__working {
-    // }
-    // &__days {
-    // }
-    // &__text {
-    //   &--primary {
-    //   }
-    //   &--secondary {
-    //   }
-    // }
-    // &__address {
-    //   display: flex;
-    //   flex-direction: column;
-    // }
-    // &__link {
-    // }
-    // &__buttons {
-    // }
-    // &__button {
-    //   &--locations {
-    //   }
-    //   &--franchise {
-    //   }
-    // }
-    // &__svg {
-    //   &--red {
-    //   }
-    //   &--white {
-    //   }
-    // }
+    &__title {
+      border-radius: 4px;
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 30px;
+      width: 73px;
+      height: 28px;
+      &--green {
+        width: 138px;
+      }
+    }
+    &__working {
+      padding: 30px 0;
+      margin-bottom: 30px;
+    }
+    &__days {
+      font-size: 14px;
+      line-height: 26px;
+      &--space {
+        margin-bottom: 16px;
+      }
+    }
+    &__text {
+      &--primary {
+        font-size: 14px;
+        line-height: 26px;
+      }
+      &--secondary {
+        font-size: 14px;
+        line-height: 23px;
+      }
+    }
+    &__link {
+      font-size: 14px;
+      line-height: 26px;
+    }
+    &__buttons {
+      flex-direction: row;
+      gap: 15px;
+    }
   }
 }
 @media screen and(min-width:1280px) {
   .contacts {
     &__container {
-      margin: 0 auto;
-      padding: 0 115px;
-      padding-top: 85px;
-      padding-bottom: 165px;
       background-image: url(../images/contacts-backgroundx1.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 20%;
+      padding: 0 115px;
+      padding-bottom: 165px;
     }
     &__grid {
       display: flex;
       gap: 30px;
+      margin-bottom: 86px;
     }
     &__item {
       flex-basis: calc((100% - 60px) / 3);
     }
-    // &__title {
-    // }
-    // &__working {
-    // }
-    // &__days {
-    // }
-    // &__text {
-    //   &--primary {
-    //   }
-    //   &--secondary {
-    //   }
-    // }
-    // &__address {
-    //   display: flex;
-    //   flex-direction: column;
-    // }
-    // &__link {
-    // }
-    // &__buttons {
-    // }
-    // &__button {
-    //   &--locations {
-    //   }
-    //   &--franchise {
-    //   }
-    // }
-    // &__svg {
-    //   &--red {
-    //   }
-    //   &--white {
-    //   }
-    // }
+    &__title {
+      margin-bottom: 32px;
+    }
+    &__working {
+      padding: 32px 0;
+      margin-bottom: 32px;
+    }
+    &__days {
+      font-size: 16px;
+      line-height: 30px;
+    }
+    &__text {
+      &--primary {
+        font-size: 16px;
+        line-height: 30px;
+      }
+      &--secondary {
+        font-size: 16px;
+        line-height: 29px;
+      }
+    }
+    &__link {
+      font-size: 16px;
+      line-height: 29px;
+    }
   }
 }
