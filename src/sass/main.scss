@@ -5,6 +5,7 @@
 
 @use 'base/base.scss';
 
+@use 'components/header';
 @use 'components/about';
 @use 'components/advantages';
 @use 'components/contacts';
@@ -12,4 +13,4 @@
 @use 'components/gallery';
 @use 'components/hero';
 @use 'components/products';
-@use 'components/reviews';
+@use 'components/customer-reviews';

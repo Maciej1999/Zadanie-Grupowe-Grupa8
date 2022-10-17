@@ -1,0 +1,268 @@
+@use '../utils/' as *;
+
+.footer {
+  padding: 0;
+  margin: 0 auto;
+  background-color: getColor('pink-light');
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    min-width: 320px;
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item--row {
+    padding: 0;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  &__heading {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 17px;
+  }
+
+  &__heading {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: getColor('pink-dark');
+    padding-left: 22px;
+    width: 232px;
+  }
+
+  &__heading--bigger {
+    width: 200px;
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: getColor('cherry');
+    padding-left: 20px;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 28.24px;
+    padding-right: 20.5px;
+    padding-top: 43px;
+  }
+
+  &__icon-link {
+    //flex dla svg
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    border: 0px;
+    border-radius: 50%;
+    fill: getColor('white');
+    background-color: #FEA5BB;
+
+    &:hover {
+      background-color: getColor('cherry');
+    }
+  }
+
+  &__icon-github {
+    height: 19px;
+    width: 19px;
+    padding: 0;
+  }
+
+  &__icon-telegram {
+    height: 15px;
+    width: 19px;
+    padding: 0;
+    padding-right: 3px;
+  }
+
+  &__icon-fb {
+    height: 19px;
+    width: 9px;
+    padding: 0;
+  }
+
+  &__contact {
+    text-align: right;
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+
+  &__contact-text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    color: getColor('black');
+    padding-right: 20px;
+  }
+
+  &__tel {
+    color: getColor('cherry');
+  }
+
+  &__arr {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid getColor('gray-light');
+    padding-top: 22px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__arr-text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    width: 135px;
+    color: getColor('bronze');
+    margin: 0 auto;
+  }
+}
+
+//tabletowo
+
+@media screen and (min-width: 480px) {
+  .footer {
+    &__item--row {
+      display: flex;
+      align-items: flex-start;
+      padding-bottom: 91px;
+    }
+
+    &__item--column {
+      align-items: flex-start;
+      padding: 0;
+
+    }
+
+    &__heading {
+      font-size: 26px;
+      line-height: 30px;
+      letter-spacing: 0.04em;
+      width: 320px;
+    }
+
+    &__heading--bigger {
+      width: 320px;
+      font-size: 48px;
+      line-height: 55px;
+      letter-spacing: 0.06em;
+    }
+
+    &__contact {
+      padding-top: 46px;
+    }
+
+    &__contact-text {
+      font-size: 14px;
+    }
+
+    &__social {
+      gap: 30px;
+      padding-top: 0;
+    }
+
+    &__icon-link {
+      height: 34px;
+      width: 34px;
+    }
+
+    &__icon-github {
+      height: 20px;
+      width: 20px;
+      padding: 0;
+    }
+
+    &__icon-telegram {
+      height: 16px;
+      width: 20.4px;
+      padding: 0;
+      padding-right: 3.4px;
+    }
+
+    &__icon-fb {
+      height: 20.4px;
+      width: 9.35px;
+      padding: 0;
+    }
+
+    &__arr {
+      padding-top: 29px;
+      padding-bottom: 18px;
+    }
+
+    &__arr-text {
+      line-height: 26px;
+      letter-spacing: 0.02em;
+      width: 276px;
+    }
+  }
+}
+
+//desktopowo
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__item--row {
+      padding-bottom: 97px;
+    }
+
+    &__heading {
+      font-size: 30px;
+      line-height: 34px;
+      width: 500px;
+    }
+
+    &__heading--bigger {
+      width: 500px;
+      font-size: 58px;
+      line-height: 66px;
+    }
+
+    &__contact {
+      padding-top: 50px;
+    }
+
+    &__contact-text {
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+    }
+
+    &__social {
+      gap: 24px;
+      padding-top: 0;
+    }
+
+    &__arr {
+      padding-top: 9px;
+      padding-bottom: 10px;
+    }
+
+    &__arr-text {
+      font-size: 14px;
+      line-height: 26px;
+      width: 276px;
+    }
+  }
+}
