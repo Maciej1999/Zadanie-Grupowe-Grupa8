@@ -26,10 +26,23 @@
     font-weight: $font-bold;
     color: getColor('white');
     line-height: 1.31;
+    &:hover {
+      color: getColor('cherry');
+    }
   }
 
   &__button {
     display: none;
+    &:hover {
+      background-color: getColor('gray-hover');
+    }
+  }
+  &__icon {
+    width: 10px;
+    height: 10px;
+    stroke: getColor('cherry');
+    fill: none;
+    margin-left: 10px;
   }
 }
 

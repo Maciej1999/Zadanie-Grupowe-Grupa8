@@ -70,8 +70,21 @@ a {
   color: #fff;
   line-height: 1.31;
 }
+.header__link:hover {
+  color: #d41443;
+}
 .header__button {
   display: none;
+}
+.header__button:hover {
+  background-color: #ecebeb;
+}
+.header__icon {
+  width: 10px;
+  height: 10px;
+  stroke: #d41443;
+  fill: none;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 480px) {
