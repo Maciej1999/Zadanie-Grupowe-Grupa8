@@ -46,6 +46,10 @@
   }
 }
 
+.js-open-menu {
+  fill: getColor;
+}
+
 @media screen and (min-width: 480px) {
   .header {
     &__container {
@@ -105,5 +109,9 @@
       font-weight: $font-bold;
       font-family: $font-primary;
     }
+  }
+
+  .js-open-menu {
+    display: none;
   }
 }
