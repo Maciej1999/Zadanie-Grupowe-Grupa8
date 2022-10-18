@@ -87,6 +87,10 @@ a {
   margin-left: 10px;
 }
 
+.js-open-menu {
+  fill: getColor;
+}
+
 @media screen and (min-width: 480px) {
   .header__container {
     padding: 0 20px;
@@ -145,6 +149,9 @@ a {
     gap: 35px;
     font-weight: 700;
     font-family: "DM Sans", sans-serif;
+  }
+  .js-open-menu {
+    display: none;
   }
 }
 .about {
@@ -1006,6 +1013,7 @@ a {
   }
   .footer__contact-text {
     font-size: 14px;
+    padding-right: 0;
   }
   .footer__social {
     gap: 30px;
@@ -1066,6 +1074,7 @@ a {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.02em;
+    padding-right: 0;
   }
   .footer__social {
     gap: 24px;
@@ -1992,8 +2001,11 @@ a {
   background-color: #fff;
   background-image: url(../images/home.png);
   background-repeat: no-repeat;
-  height: 13px;
-  width: 13px;
+  position: center;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  height: 14px;
+  width: 14px;
   border-radius: 0;
 }
 .review__dot--active:hover {
@@ -2077,5 +2089,148 @@ a {
 @media (min-width: 1280px) {
   .customer-reviews__container {
     max-width: 1280px;
+  }
+}
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  width: 24px;
+  height: 24px;
+}
+.menu-toggle__icon {
+  stroke: #d41443;
+  padding: 0;
+  fill: black;
+  width: 20px;
+  height: 20px;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: transparent;
+}
+
+.menu-container {
+  padding-top: 32px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e17992;
+  z-index: 999;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  color: white;
+}
+
+.mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding-top: 20px;
+  padding-left: 0px;
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: #d41443;
+}
+
+.mobile-menu__link {
+  text-decoration: none;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+}
+
+.mobile-menu__button {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: block;
+  color: #d41443;
+  font-weight: 700;
+  width: 209px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: white;
+  border: none;
+}
+.mobile-menu__button__button:hover, .mobile-menu__button__button:focus {
+  background-color: #ecebeb;
+}
+
+.mobile-menu__item {
+  width: 100vw;
+  padding: 13px 0px 13px 0px;
+  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  text-align: left;
+}
+
+.mobile-menu__container {
+  width: 100vw;
+}
+
+@media screen and (min-width: 1280px) {
+  .menu-toggle {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
