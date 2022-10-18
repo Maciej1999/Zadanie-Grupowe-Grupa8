@@ -153,7 +153,6 @@ a {
           justify-content: center;
 }
 .about__container {
-  min-width: 280px;
   max-width: 1280px;
   width: 100%;
   height: auto;
@@ -527,7 +526,6 @@ a {
   margin: 0 auto;
   padding: 0 50px;
   width: 100%;
-  min-width: 320px;
   max-width: 1280px;
   padding-bottom: 113px;
 }
@@ -822,7 +820,6 @@ a {
           justify-content: center;
 }
 .footer__container {
-  min-width: 320px;
   width: 100%;
   max-width: 1280px;
   height: auto;
@@ -898,7 +895,7 @@ a {
   border: 0px;
   border-radius: 50%;
   fill: #fff;
-  background-color: #FEA5BB;
+  background-color: #fea5bb;
 }
 .footer__icon-link:hover {
   background-color: #d41443;
