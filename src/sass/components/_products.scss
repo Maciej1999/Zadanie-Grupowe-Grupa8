@@ -74,7 +74,11 @@
 
     &--1 {
       &::before {
-        content: url('../images/product1-mobile.png');
+        background-image: url('../images/product1-mobile.png');
+        background-size: 249px 252px;
+        width: 249px;
+        height: 252px;
+        content: '';
         position: absolute;
         left: 50%;
         top: 7%;
@@ -94,7 +98,11 @@
 
     &--2 {
       &::before {
-        content: url('../images/product2-mobile.png');
+        background-image: url('../images/product2-mobile.png');
+        background-size: 249px 252px;
+        width: 249px;
+        height: 252px;
+        content: '';
         position: absolute;
         left: 50%;
         top: 7%;
@@ -114,7 +122,11 @@
 
     &--3 {
       &::before {
-        content: url('../images/product3-mobile.png');
+        background-image: url('../images/product3-mobile.png');
+        background-size: 249px 252px;
+        width: 249px;
+        height: 252px;
+        content: '';
         position: absolute;
         left: 50%;
         top: 7%;
@@ -185,17 +197,17 @@
     &__list-header {
       &--1 {
         &::before {
-          content: url('../images/product1-mobile@2x.png');
+          background-image: url('../images/product1-mobile@2x.png');
         }
       }
       &--2 {
         &::before {
-          content: url('../images/product2-mobile@2x.png');
+          background-image: url('../images/product2-mobile@2x.png');
         }
       }
       &--3 {
         &::before {
-          content: url('../images/product3-mobile@2x.png');
+          background-image: url('../images/product3-mobile@2x.png');
         }
       }
     }
@@ -232,19 +244,28 @@
       padding-top: 152px;
       &--1 {
         &::before {
-          content: url('../images/product1-tablet.png');
+          background-image: url('../images/product1-tablet.png');
+          background-size: 220px 226px;
+          width: 220px;
+          height: 226px;
           top: 5%;
         }
       }
       &--2 {
         &::before {
-          content: url('../images/product2-tablet.png');
+          background-image: url('../images/product2-tablet.png');
+          background-size: 220px 226px;
+          width: 220px;
+          height: 226px;
           top: 5%;
         }
       }
       &--3 {
         &::before {
-          content: url('../images/product3-tablet.png');
+          background-image: url('../images/product3-tablet.png');
+          background-size: 220px 226px;
+          width: 220px;
+          height: 226px;
           top: 5%;
         }
       }
@@ -259,17 +280,17 @@
     &__list-header {
       &--1 {
         &::before {
-          content: url('../images/product1-tablet@2x.png');
+          background-image: url('../images/product1-tablet@2x.png');
         }
       }
       &--2 {
         &::before {
-          content: url('../images/product2-tablet@2x.png');
+          background-image: url('../images/product2-tablet@2x.png');
         }
       }
       &--3 {
         &::before {
-          content: url('../images/product3-tablet@2x.png');
+          background-image: url('../images/product3-tablet@2x.png');
         }
       }
     }
@@ -307,19 +328,28 @@
       padding-top: 163px;
       &--1 {
         &::before {
-          content: url('../images/product1.png');
+          background-image: url('../images/product1.png');
+          background-size: 335px 335px;
+          width: 335px;
+          height: 335px;
           top: -15%;
         }
       }
       &--2 {
         &::before {
-          content: url('../images/product2.png');
+          background-image: url('../images/product2.png');
+          background-size: 335px 335px;
+          width: 335px;
+          height: 335px;
           top: -15%;
         }
       }
       &--3 {
         &::before {
-          content: url('../images/product3.png');
+          background-image: url('../images/product3.png');
+          background-size: 335px 335px;
+          width: 335px;
+          height: 335px;
           top: -15%;
         }
       }
@@ -334,17 +364,17 @@
     &__list-header {
       &--1 {
         &::before {
-          content: url('../images/product1@2x.png');
+          background-image: url('../images/product1@2x.png');
         }
       }
       &--2 {
         &::before {
-          content: url('../images/product2@2x.png');
+          background-image: url('../images/product2@2x.png');
         }
       }
       &--3 {
         &::before {
-          content: url('../images/product3@2x.png');
+          background-image: url('../images/product3@2x.png');
         }
       }
     }
