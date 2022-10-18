@@ -683,6 +683,9 @@ a {
   color: #d41443;
   background-color: #fff;
 }
+.contacts__button--franchise:hover {
+  background-color: #ecebeb;
+}
 .contacts__svg {
   width: 10px;
   height: 10px;
