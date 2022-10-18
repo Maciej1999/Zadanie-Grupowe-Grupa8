@@ -1,0 +1,72 @@
+<header class="header">
+  <div class="header__container"> 
+    <div class="header__container--left">
+      <picture>
+        <source
+          srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+
+        <source
+          srcset="./images/logo-tablet.png 1x, ./images/logo-tablet@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/logo-mobile.png 1x, ./images/logo-mobile@2x.png 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          srcset="./images/logo.png 1x, ./images/logo@2x.png 2x"
+          alt="Icecream logo"
+          class="header__logo"
+        />
+      </picture>
+    </div>
+    <div class="header__container--right">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#">Home</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#advantages">About us</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#how">How it's made?</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#products">Our products</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        
+      </nav>
+    </div>
+     <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+        <svg width="24" height="24">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+        <!-- svg ktory widze na kompie -->
+          <!-- <svg
+            width="24"
+            height="24"
+            fill="#D41443"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg> -->
+          </button>
+    <button type="button" class="header__button">Buy now &#62;</button>
+  </div>
+</header>
