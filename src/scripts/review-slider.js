@@ -1,26 +1,38 @@
-let slideIndex = 1;
-showReview(slideIndex);
+(() => {
+  const dots = {
+    dotOne: document.getElementById('dot-1'),
+    dotTwo: document.getElementById('dot-2'),
+    dotThree: document.getElementById('dot-3'),
+  };
 
-function currentReview(n) {
-  showReview((slideIndex = n));
-}
+  let slideIndex = 1;
+  showReviewNew(slideIndex);
 
-function showReview(n) {
-  let i;
-  let slides = document.getElementsByClassName("review");
-  let dots = document.getElementsByClassName("review__dot");
-  if (n > slides.length) {
-    slideIndex = 1;
+  dots.dotThree.addEventListener('click', function () {
+    showReviewNew(3);
+  });
+  dots.dotTwo.addEventListener('click', function () {
+    showReviewNew(2);
+  });
+  dots.dotOne.addEventListener('click', function () {
+    showReviewNew(1);
+  });
+
+  function showReviewNew(n) {
+    let i;
+
+    let slides = document.getElementsByClassName('review');
+    let menu = document.getElementsByClassName('review__dot');
+
+    for (i = 0; i < menu.length; i++) {
+      menu[i].className = menu[i].className.replace(' review__dot--active', '');
+    }
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].className = slides[i].className.replace(' review--active', '');
+    }
+
+    slides[n - 1].className += ' review--active';
+    menu[n - 1].className += ' review__dot--active';
   }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" review__dot--active", "");
-  }
-  slides[slideIndex - 1].style.display = "flex";
-  dots[slideIndex - 1].className += " review__dot--active";
-}
+})();
