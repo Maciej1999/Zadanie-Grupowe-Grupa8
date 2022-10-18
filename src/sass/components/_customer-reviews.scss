@@ -6,6 +6,7 @@
 .customer-reviews__container {
   margin: 0 auto;
   width: 100%;
+  max-width: 1280px;
 }
 
 .review {
@@ -217,8 +218,8 @@
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1280px) {
   .customer-reviews__container {
-    width: 1280px;
+    max-width: 1280px;
   }
 }
