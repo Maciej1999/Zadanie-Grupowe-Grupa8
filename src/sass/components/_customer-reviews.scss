@@ -111,8 +111,10 @@
       background-color: getColor('white');
       background-image: url(../images/home.png);
       background-repeat: no-repeat;
-      height: 13px;
-      width: 13px;
+      position: center;
+      transition-duration: 0.1s;
+      height: 14px;
+      width: 14px;
       border-radius: 0;
       &:hover {
         transform: scale(1);
