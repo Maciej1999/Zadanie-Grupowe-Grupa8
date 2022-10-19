@@ -1,7 +1,6 @@
 @use '../utils/' as *;
 
 .header {
-  // background-color: getColor('pink-medium');
   width: 100%;
   padding-top: 6px;
   position: absolute;
@@ -44,29 +43,18 @@
     fill: none;
     margin-left: 10px;
   }
-}
 
-// HAMBURGER 
+  &__mobile-btn {
+    stroke: getColor('cherry');
+  }
 
-
-
-// .menu-toggle {
-//   margin: 0 auto;
-//   padding: 0;
-//   stroke: getColor('cherry');
-//   display: inline-block;
-// }
-
-.header__mobile-btn{
-  stroke: getColor('cherry');
-}
-
-.header__menu-icon{
-    margin: 0 ;
+  &__menu-icon {
+    margin: 0;
     cursor: pointer;
-    padding:0;
+    padding: 0;
     height: 24px;
     width: 24px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -83,6 +71,7 @@
     &__container {
       padding: 38px 34px 0 34px;
       margin: 0 auto;
+      gap: 30px;
 
       &--left {
         width: auto;
@@ -128,9 +117,9 @@
       font-weight: $font-bold;
       font-family: $font-primary;
     }
-  }
 
-  .js-open-menu {
-    display: none;
+    &__mobile-menu {
+      display: none;
+    }
   }
 }
