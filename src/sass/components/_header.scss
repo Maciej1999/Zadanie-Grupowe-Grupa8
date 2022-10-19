@@ -50,13 +50,6 @@
 
 
 
-// .menu-toggle {
-//   margin: 0 auto;
-//   padding: 0;
-//   stroke: getColor('cherry');
-//   display: inline-block;
-// }
-
 .header__mobile-btn{
   stroke: getColor('cherry');
 }
@@ -67,6 +60,7 @@
     padding:0;
     height: 24px;
     width: 24px;
+    margin-right: 30px;
 }
 
 @media screen and (min-width: 480px) {
