@@ -1,2 +1,5 @@
-HTML and CSS project after first module of course Fullstack Developer in GOIT 
-https://maciej1999.github.io/Zadanie-Grupowe-Grupa8/
+HTML and CSS project after first module of course Fullstack Developer in GOIT.
+Team Lider - Maciej Sikora
+SCRUM Master - Magdalena
+Developers: Krystian, Lech, Dawid, Dominik, Kamil, Sebastian
+
